@@ -1,2 +1,1 @@
-import './status.js';
-import './example.js';
+import './status';

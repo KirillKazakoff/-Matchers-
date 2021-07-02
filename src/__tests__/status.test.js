@@ -1,4 +1,4 @@
-import arraySort from '../status.js';
+import arraySort from '../status';
 
 test('chars order', () => {
     const result = arraySort();
