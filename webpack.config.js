@@ -1,13 +1,9 @@
+const path = require('path'); // Node.js модуль для разрешения путей файлов
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const path = require('path'); // Node.js модуль для разрешения путей файлов
 
 module.exports = {
-    target: 'web',
-
-    entry: {
-        app: ['./src/index.js'],
-    },
+    entry: './src/index.js',
 
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -16,8 +12,8 @@ module.exports = {
 
     devServer: {
         contentBase: './',
-        publicPath: '/dist/',
         watchContentBase: true,
+        publicPath: '/dist/',
     },
 
     module: {
@@ -26,12 +22,6 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                     MiniCssExtractPlugin.loader, 'css-loader',
-                ],
-            },
-            {
-                test: /\.txt$/,
-                use: [
-                    'raw-loader',
                 ],
             },
             {
