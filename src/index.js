@@ -1,1 +1,1 @@
-import heroStatus from './status.js';
+import './status';

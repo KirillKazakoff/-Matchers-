@@ -9,16 +9,16 @@
     "webpack": "webpack --mode production",
     "build": "npm run webpack && npm run start",
     "lint": "eslint ."
-},
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.28.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.23.4",
     "@babel/preset-env": "^7.14.7",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.6",
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
     "html-webpack-plugin": "^5.3.1",
     "jest": "^27.0.5",
     "mini-css-extract-plugin": "^1.6.0",
@@ -26,8 +26,8 @@
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
   },
+  "browserslist": "> 1%, last 1 version, not dead",
   "dependencies": {
-    "core-js": "^3.15.1"
-  },
-  "browserslist": "> 1%, last 1 version, not dead"
+    "core-js": "^3.15.2"
+  }
 }

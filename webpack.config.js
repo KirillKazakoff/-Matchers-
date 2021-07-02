@@ -1,6 +1,6 @@
-const path = require('path'); // Node.js модуль для разрешения путей файлов
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path'); // Node.js модуль для разрешения путей файлов
 
 module.exports = {
     target: 'web',
