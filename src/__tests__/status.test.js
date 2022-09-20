@@ -1,3 +1,5 @@
+/** @format */
+
 import arraySort from '../status';
 
 const sortedArr = [
@@ -12,39 +14,7 @@ test('chars order', () => {
     expect(result).toEqual(sortedArr);
 });
 
-test('toBe don\'t work', () => {
-    expect(() => expect(result).toBe(sortedArr).toThrow());
-});
-
-test('toBe another', () => {
+test('toBe exception throwing', () => {
     const check = () => expect(result).toBe(sortedArr);
     expect(check).toThrow();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const promise = new Promise((resolve) => {
-//     setTimeout(() => {
-//         // переведёт промис в состояние fulfilled с результатом "result"
-//         resolve(5);
-//     }, 1000);
-// })
-
-// it('example promise', async () => {
-//     const response = await promise;
-//     return expect(response).toBe(5);
-// })
